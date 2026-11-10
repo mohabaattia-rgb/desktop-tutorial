@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PizzaZone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+
+            <span class="logo-icon">🍕</span>
+
+            <div>
+                <h2>Pizza<span>Zone</span></h2>
+                <small>Better Pizza. Better Mood</small>
+            </div>
+
+        </a>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#home" class="active">Home</a>
+            </li>
+
+            <li>
+                <a href="#menu">Menu</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#gallery">Gallery</a>
+            </li>
+
+            <li>
+                <a href="#reviews">Reviews</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+
+        <div class="nav-actions">
+
+            <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="cart-btn">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span class="cart-count">0</span>
+
+            </button>
+
+            <a href="#menu" class="order-btn">
+                Order Now
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <button class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <span class="small-title">
+                <i class="fa-solid fa-fire"></i>
+                Fresh Ingredients
+            </span>
+
+            <h1>
+                Real Pizza.
+                <span>Great Taste.</span>
+            </h1>
+
+            <p>
+                We craft the perfect pizza using fresh ingredients,
+                authentic recipes and a passion for great food.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#menu" class="main-btn">
+                    Order Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#menu" class="watch-menu">
+                    <span>
+                        <i class="fa-solid fa-play"></i>
+                    </span>
+                    View Menu
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="categories">
+
+    <div class="container">
+
+        <div class="category-list">
+
+            <button class="category active" data-category="all">
+                <i class="fa-solid fa-pizza-slice"></i>
+                <span>All</span>
+            </button>
+
+            <button class="category" data-category="pizza">
+                <i class="fa-solid fa-pizza-slice"></i>
+                <span>Pizzas</span>
+            </button>
+
+            <button class="category" data-category="pasta">
+                <i class="fa-solid fa-bowl-food"></i>
+                <span>Pastas</span>
+            </button>
+
+            <button class="category" data-category="sides">
+                <i class="fa-solid fa-box-open"></i>
+                <span>Sides</span>
+            </button>
+
+            <button class="category" data-category="drinks">
+                <i class="fa-solid fa-glass-water"></i>
+                <span>Drinks</span>
+            </button>
+
+            <button class="category" data-category="dessert">
+                <i class="fa-solid fa-cake-candles"></i>
+                <span>Desserts</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MENU ================= -->
+
+<section class="menu-section section" id="menu">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span>Our Menu</span>
+                <h2>Popular Items</h2>
+            </div>
+
+            <a href="#">
+                View Full Menu
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <div class="menu-grid">
+
+
+            <!-- Pizza -->
+
+            <div class="food-card" data-category="pizza">
+
+                <div class="food-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80"
+                        alt="Margherita Pizza"
+                    >
+
+                    <span class="popular">Popular</span>
+
+                    <button class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="food-info">
+
+                    <h3>Margherita</h3>
+
+                    <p>
+                        Tomato sauce, mozzarella, fresh basil
+                        and extra virgin olive oil.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>$8.99</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Margherita"
+                            data-price="8.99"
+                        >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Pizza -->
+
+            <div class="food-card" data-category="pizza">
+
+                <div class="food-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=800&q=80"
+                        alt="Pepperoni Pizza"
+                    >
+
+                    <button class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="food-info">
+
+                    <h3>Pepperoni</h3>
+
+                    <p>
+                        Mozzarella, premium pepperoni
+                        and rich tomato sauce.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>$10.99</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Pepperoni"
+                            data-price="10.99"
+                        >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Pizza -->
+
+            <div class="food-card" data-category="pizza">
+
+                <div class="food-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+                        alt="Meat Lovers Pizza"
+                    >
+
+                    <button class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="food-info">
+
+                    <h3>Meat Lovers</h3>
+
+                    <p>
+                        Pepperoni, sausage, beef, bacon
+                        and mozzarella.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>$13.99</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Meat Lovers"
+                            data-price="13.99"
+                        >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Pizza -->
+
+            <div class="food-card" data-category="pizza">
+
+                <div class="food-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=800&q=80"
+                        alt="Veggie Pizza"
+                    >
+
+                    <button class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="food-info">
+
+                    <h3>Veggie Supreme</h3>
+
+                    <p>
+                        Mushrooms, olives, peppers,
+                        onions and mozzarella.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>$11.99</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Veggie Supreme"
+                            data-price="11.99"
+                        >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Pasta -->
+
+            <div class="food-card" data-category="pasta">
+
+                <div class="food-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80"
+                        alt="Creamy Pasta"
+                    >
+
+                </div>
+
+                <div class="food-info">
+
+                    <h3>Creamy Pasta</h3>
+
+                    <p>
+                        Creamy parmesan sauce,
+                        herbs and grilled chicken.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>$9.99</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Creamy Pasta"
+                            data-price="9.99"
+                        >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Sides -->
+
+            <div class="food-card" data-category="sides">
+
+                <div class="food-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&q=80"
+                        alt="French Fries"
+                    >
+
+                </div>
+
+                <div class="food-info">
+
+                    <h3>Crispy Fries</h3>
+
+                    <p>
+                        Golden crispy fries with
+                        our signature seasoning.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>$4.99</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Crispy Fries"
+                            data-price="4.99"
+                        >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Drinks -->
+
+            <div class="food-card" data-category="drinks">
+
+                <div class="food-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=80"
+                        alt="Fresh Drink"
+                    >
+
+                </div>
+
+                <div class="food-info">
+
+                    <h3>Fresh Lemonade</h3>
+
+                    <p>
+                        Fresh lemon juice, mint
+                        and sparkling water.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>$3.99</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Fresh Lemonade"
+                            data-price="3.99"
+                        >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Dessert -->
+
+            <div class="food-card" data-category="dessert">
+
+                <div class="food-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80"
+                        alt="Chocolate Cake"
+                    >
+
+                </div>
+
+                <div class="food-info">
+
+                    <h3>Chocolate Cake</h3>
+
+                    <p>
+                        Rich chocolate cake with
+                        creamy chocolate frosting.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>$5.99</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Chocolate Cake"
+                            data-price="5.99"
+                        >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about section" id="about">
+
+    <div class="container about-container">
+
+        <div class="about-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1000&q=80"
+                alt="Pizza Chef"
+            >
+
+            <div class="experience">
+
+                <strong>10+</strong>
+                <span>Years Experience</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <span class="section-label">
+                About Us
+            </span>
+
+            <h2>
+                We Don't Just Make Pizza.
+                <span>We Make Memories.</span>
+            </h2>
+
+            <p>
+                PizzaZone started with a simple idea:
+                bring people together through great pizza.
+            </p>
+
+            <p>
+                We use the freshest ingredients, traditional
+                recipes and a little bit of love in every pizza
+                we make.
+            </p>
+
+
+            <div class="stats">
+
+                <div>
+                    <strong>50K+</strong>
+                    <span>Happy Customers</span>
+                </div>
+
+                <div>
+                    <strong>4.8</strong>
+                    <span>Average Rating</span>
+                </div>
+
+                <div>
+                    <strong>25+</strong>
+                    <span>Pizza Recipes</span>
+                </div>
+
+            </div>
+
+
+            <a href="#" class="outline-btn">
+                Learn More
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= OFFER ================= -->
+
+<section class="offer section">
+
+    <div class="container">
+
+        <div class="offer-box">
+
+            <div class="offer-content">
+
+                <span>
+                    <i class="fa-solid fa-fire"></i>
+                    Special Offer
+                </span>
+
+                <h2>
+                    Get 2 Large Pizzas
+                    <br>
+                    for Only <b>$18.99</b>
+                </h2>
+
+                <p>
+                    Valid for a limited time only.
+                    Don't miss out!
+                </p>
+
+                <a href="#menu" class="main-btn">
+                    Order Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="offer-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=900&q=80"
+                    alt="Pizza Offer"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery section" id="gallery">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span>Our Gallery</span>
+                <h2>Fresh Moments</h2>
+            </div>
+
+            <a href="#">
+                Follow Us
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item large">
+
+                <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=900&q=80">
+
+                <div class="gallery-overlay">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&q=80">
+
+                <div class="gallery-overlay">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80">
+
+                <div class="gallery-overlay">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=800&q=80">
+
+                <div class="gallery-overlay">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80">
+
+                <div class="gallery-overlay">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= REVIEWS ================= -->
+
+<section class="reviews section" id="reviews">
+
+    <div class="container">
+
+        <div class="center-heading">
+
+            <span>What Our Customers Say</span>
+
+            <h2>Happy Customers</h2>
+
+        </div>
+
+
+        <div class="reviews-grid">
+
+            <div class="review-card">
+
+                <div class="review-top">
+
+                    <div class="avatar">A</div>
+
+                    <div>
+                        <h4>Ahmed Mohamed</h4>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+                    </div>
+
+                </div>
+
+                <p>
+                    "The best pizza I've ever had!
+                    The crust is perfect and the ingredients
+                    are super fresh."
+                </p>
+
+                <small>August 25, 2026</small>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-top">
+
+                    <div class="avatar">S</div>
+
+                    <div>
+                        <h4>Sara Ali</h4>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+                    </div>
+
+                </div>
+
+                <p>
+                    "Amazing food and great service.
+                    Will definitely order again!"
+                </p>
+
+                <small>August 20, 2026</small>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-top">
+
+                    <div class="avatar">O</div>
+
+                    <div>
+                        <h4>Omar Khaled</h4>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+                    </div>
+
+                </div>
+
+                <p>
+                    "Fast delivery and the pizza
+                    was still hot. Highly recommended!"
+                </p>
+
+                <small>August 15, 2026</small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact section" id="contact">
+
+    <div class="container contact-container">
+
+        <div class="contact-content">
+
+            <span class="section-label">
+                Get In Touch
+            </span>
+
+            <h2>
+                Let's Talk
+            </h2>
+
+            <p>
+                Have a question, suggestion or just want
+                to say hello? We'd love to hear from you.
+            </p>
+
+
+            <div class="contact-info">
+
+                <div class="contact-item">
+
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+
+                    <div>
+                        <h4>Visit Us</h4>
+                        <p>123 Pizza Street, Cairo, Egypt</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span>
+                        <i class="fa-solid fa-phone"></i>
+                    </span>
+
+                    <div>
+                        <h4>Call Us</h4>
+                        <p>+20 123 456 7890</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span>
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+
+                    <div>
+                        <h4>Email Us</h4>
+                        <p>hello@pizzazone.com</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <form class="contact-form">
+
+            <div class="input-row">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+            </div>
+
+            <input
+                type="text"
+                placeholder="Subject"
+                required
+            >
+
+            <textarea
+                placeholder="Your Message"
+                rows="6"
+                required
+            ></textarea>
+
+            <button type="submit" class="main-btn">
+                Send Message
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container footer-grid">
+
+
+        <div class="footer-brand">
+
+            <a href="#home" class="logo">
+
+                <span class="logo-icon">🍕</span>
+
+                <div>
+                    <h2>Pizza<span>Zone</span></h2>
+                    <small>Better Pizza. Better Mood</small>
+                </div>
+
+            </a>
+
+            <p>
+                Great pizza, fresh ingredients
+                and unforgettable moments.
+            </p>
+
+
+            <div class="socials">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Contact Us</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Cairo, Egypt
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +20 123 456 7890
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                hello@pizzazone.com
+            </p>
+
+        </div>
+
+
+        <div class="newsletter">
+
+            <h3>Newsletter</h3>
+
+            <p>
+                Get our latest offers and updates.
+            </p>
+
+            <form>
+
+                <input
+                    type="email"
+                    placeholder="Your email address"
+                >
+
+                <button>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 PizzaZone. All rights reserved.
+        </p>
+
+        <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= CART ================= -->
+
+<div class="cart-panel">
+
+    <div class="cart-header">
+
+        <h3>Your Cart</h3>
+
+        <button class="close-cart">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+
+    <div class="cart-items">
+
+        <p class="empty-cart">
+            Your cart is empty 🍕
+        </p>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div>
+            <span>Total</span>
+            <strong>$<span class="cart-total">0.00</span></strong>
+        </div>
+
+        <button class="checkout-btn">
+            Checkout
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+</div>
+
+
+<div class="cart-overlay"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
